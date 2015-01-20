@@ -37,3 +37,14 @@ The MCP2515 is supported by Linux and Raspbian, allthough support for the MCP251
 - JP1 is for selecting the SPI chip select (CS0 or CS1).
 - JP2 is for enabling/disabling the 120 Ohm bus temination resitor.
 - JP3 is for selecting the interrupt GPIO (23 or 24).
+
+## CAN-bus connector pinout
+1. Not connected
+2. CAN Low
+3. CAN ground
+4. Not connected
+5. Not connected
+6. Optional ground
+7. CAN High
+8. Not connected
+9. Optional power
