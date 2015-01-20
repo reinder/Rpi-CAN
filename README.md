@@ -27,12 +27,12 @@ The MCP2515 is supported by Linux and Raspbian, allthough support for the MCP251
 - IC2: CAN controller, MCP2515, SO-18W
 - IC3: Voltage regulator 3.3V, XC6221B332MR, SOT25 (Optional: only if powered from 5 V rail.)
 - JP1: 3 pin jumper, RM254
-- JP2: 3 pin jumper, RM254
-- JP3: 2 pin jumper, RM254
+- JP2: 2 pin jumper, RM254
+- JP3: 3 pin jumper, RM254
 - X2: Pin header 2x13 female, RM254 
 - X3: D-sub 9 pin male, solder
 
 ## Jumpers
 - JP1 is for selecting the SPI chip select (CS0 or CS1).
-- JP2 is for selecting the interrupt GPIO (23 or 24).
-- JP3 is for enabling/disabling the 120 Ohm bus temination resitor.
+- JP2 is for enabling/disabling the 120 Ohm bus temination resitor.
+- JP3 is for selecting the interrupt GPIO (23 or 24).
