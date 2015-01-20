@@ -16,6 +16,7 @@ The MCP2515 is supported by Linux and Raspbian, allthough support for the MCP251
 - R4: Resistor, 10 kOhm, 0805 
 - R5: Resistor, 0 Ohm, 0805 (Optional: for connecting *optional ground* to the Raspberry Pi ground) 
 - R6: Resistor, 0 Ohm, 0805 (Optional: for connecting *CAN-ground* to the Raspberry Pi ground)
+- R7: Resistor, 0 Ohm, 0805 (Optional: for connecting *optional power* to the Raspberry Pi 5V rail)
 - C1: Ceramic Capacitor, 100 nF, 0805
 - C1: Ceramic Capacitor, 100 nF, 0805
 - C5: Ceramic Capacitor, 18 pF, 0805

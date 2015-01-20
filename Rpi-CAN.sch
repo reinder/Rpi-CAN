@@ -7847,6 +7847,8 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="0R"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="0R"/>
 <part name="SUPPLY11" library="supply2" deviceset="0V" device=""/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="0R"/>
+<part name="SUPPLY12" library="supply2" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7882,15 +7884,15 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <instance part="SUPPLY17" gate="0V" x="91.44" y="134.62"/>
 <instance part="SUPPLY18" gate="0V" x="60.96" y="134.62"/>
 <instance part="SUPPLY1" gate="P" x="132.08" y="215.9"/>
-<instance part="X3" gate="-1" x="139.7" y="101.6"/>
-<instance part="X3" gate="-2" x="139.7" y="99.06"/>
-<instance part="X3" gate="-3" x="139.7" y="96.52"/>
-<instance part="X3" gate="-4" x="139.7" y="93.98"/>
-<instance part="X3" gate="-5" x="139.7" y="91.44"/>
-<instance part="X3" gate="-6" x="139.7" y="88.9"/>
-<instance part="X3" gate="-7" x="139.7" y="86.36"/>
-<instance part="X3" gate="-8" x="139.7" y="83.82"/>
-<instance part="X3" gate="-9" x="139.7" y="81.28"/>
+<instance part="X3" gate="-1" x="144.78" y="101.6"/>
+<instance part="X3" gate="-2" x="144.78" y="99.06"/>
+<instance part="X3" gate="-3" x="144.78" y="96.52"/>
+<instance part="X3" gate="-4" x="144.78" y="93.98"/>
+<instance part="X3" gate="-5" x="144.78" y="91.44"/>
+<instance part="X3" gate="-6" x="144.78" y="88.9"/>
+<instance part="X3" gate="-7" x="144.78" y="86.36"/>
+<instance part="X3" gate="-8" x="144.78" y="83.82"/>
+<instance part="X3" gate="-9" x="144.78" y="81.28"/>
 <instance part="JP1" gate="A" x="81.28" y="187.96"/>
 <instance part="R4" gate="G$1" x="104.14" y="198.12" rot="R90"/>
 <instance part="JP3" gate="A" x="114.3" y="187.96"/>
@@ -7898,9 +7900,11 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <instance part="R3" gate="G$1" x="71.12" y="198.12" rot="R90"/>
 <instance part="SUPPLY5" gate="P" x="104.14" y="208.28"/>
 <instance part="SUPPLY7" gate="P" x="71.12" y="208.28"/>
-<instance part="R5" gate="G$1" x="132.08" y="88.9"/>
-<instance part="R6" gate="G$1" x="132.08" y="96.52"/>
-<instance part="SUPPLY11" gate="0V" x="124.46" y="76.2"/>
+<instance part="R5" gate="G$1" x="137.16" y="88.9"/>
+<instance part="R6" gate="G$1" x="137.16" y="96.52"/>
+<instance part="SUPPLY11" gate="0V" x="129.54" y="76.2"/>
+<instance part="R7" gate="G$1" x="137.16" y="81.28"/>
+<instance part="SUPPLY12" gate="+5V" x="124.46" y="81.28" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7925,12 +7929,17 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <pinref part="SUPPLY15" gate="+5V" pin="+5V"/>
 <pinref part="IC3" gate="G$1" pin="CE"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="SUPPLY12" gate="+5V" pin="+5V"/>
+<wire x1="132.08" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <wire x1="114.3" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="88.9" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="99.06" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="111.76" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 <junction x="119.38" y="99.06"/>
 <pinref part="IC1" gate="&gt;NAME" pin="CANL"/>
@@ -7940,7 +7949,7 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="137.16" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="86.36" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="96.52" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
@@ -8024,13 +8033,13 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="127" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="96.52" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="96.52" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="96.52" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="88.9" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="88.9" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="0V" pin="0V"/>
-<junction x="124.46" y="88.9"/>
+<junction x="129.54" y="88.9"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -8323,6 +8332,12 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <segment>
 <pinref part="X3" gate="-3" pin="M"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="X3" gate="-9" pin="M"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
